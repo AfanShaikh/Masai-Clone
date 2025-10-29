@@ -1,6 +1,4 @@
 # Masai-Clone
 Afan 
 
-
-
 Nilesh
