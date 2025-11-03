@@ -1,4 +1,4 @@
 # Masai-Clone
-Afan 
+Afan
 
 Nilesh
