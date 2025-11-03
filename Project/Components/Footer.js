@@ -87,3 +87,176 @@ export const Foot = () =>{
         </div>
     </footer>`
 }
+
+
+
+export const FootStyle = () =>{
+    return`
+    body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    }
+    /* Footer Css  */
+    .masai-footer {
+        background-color: #000;
+        width: 100%;
+        color: #fff;
+        padding: 50px 0 20px 0;
+    }
+
+    .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    /*
+    * Social Media Section (Left Column)
+    */
+    .footer-social {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 40px;
+    }
+
+    .footer-logo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .logo-text {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+    }
+
+    .follow-us {
+        font-size: 14px;
+        color: #fff;
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 15px;
+    }
+
+    .social-icons a {
+        color: #a0a0a0;
+        font-size: 18px;
+        transition: color 0.3s;
+    }
+
+    .social-icons a:hover {
+        color: #fff;
+    }
+
+    /*
+    * Main Content: Link Columns and CTA Button (Flex layout)
+    */
+    .footer-main-content {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    /*
+    * Navigation Columns (Grid layout for responsive columns)
+    */
+    .footer-nav-columns {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        gap: 40px;
+    }
+
+    .nav-heading {
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        letter-spacing: 0.5px;
+    }
+
+    .nav-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .nav-list li {
+        margin-bottom: 15px;
+    }
+
+    .nav-list a {
+        text-decoration: none;
+        color: #a0a0a0;
+        font-size: 14px;
+        transition: color 0.3s;
+    }
+
+    .nav-list a:hover {
+        color: #fff;
+    }
+
+    /*
+    * CTA Section (Right Column)
+    */
+    .footer-cta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 40px;
+    }
+
+    .cta-text {
+        font-size: 18px;
+        font-weight: 600;
+        color: #fff;
+        line-height: 1.4;
+        max-width: 250px;
+        margin-bottom: 25px;
+    }
+
+    .telegram-button {
+        display: inline-flex;
+        align-items: center;
+        padding: 12px 25px;
+        background-color: #ea2945;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 50px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: background-color 0.3s;
+    }
+
+    .telegram-button i {
+        margin-left: 10px;
+        font-size: 14px;
+    }
+
+    /* Button Hover Effect */
+    .telegram-button:hover {
+        background-color: #c71e35;
+    }
+
+    /*
+    * Copyright Section (Bottom Row)
+    */
+    .footer-copyright {
+        padding-top: 20px;
+        text-align: left;
+    }
+
+    .footer-copyright p {
+        font-size: 12px;
+        color: #a0a0a0;
+    }
+    `
+}
