@@ -1,3 +1,0 @@
-# Masai-Clone
-Afan 
-Nilesh
