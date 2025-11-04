@@ -1,265 +1,87 @@
-body {
+*{
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
 }
-/* Navbar Part CSS */
-.navbar {
-    background-color: #000000;
-    border-radius: 50px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    margin: 20px auto;
-    max-width: 1050px; 
-    height: 70px; 
-    padding: 0 30px; 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+.H1-1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 4.2rem;
+  text-align: center;
+  line-height: 1.2;
+  color: #000;
+  margin: 0 0 20px;
+  letter-spacing: -1px;
 }
 
-.masai_img {
-    margin-right: 40px; 
-}
-
-.masai_img img {
-    height: auto;
-    width: 114px;
-    display: block;
-}
-
-.navbar > div:nth-child(2) {
-    display: flex;
-    align-items: center;
-    gap: 30px; 
-    flex-grow: 1;
-    justify-content: center; 
-    margin-left: 0;
-}
-
-.navbar h1 {
-    color: #ffffff; 
-    font-size: larger;
-    font-weight: 500; 
-    margin: 0;
-    padding: 10px 0;
-    cursor: pointer;
-    background: none;
-    border: none;
-    transition: color 0.3s ease; 
-    white-space: nowrap;
-}
-
-.navbar h1:hover {
-    color: #e50000;
-}
-
-.navbar .btn-1 {
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    border-radius: 50px;
-    padding: 6px 15px; 
-    font-size: large;
+h3 {
+    font-family: "Poppins", sans-serif;
     font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.2s;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    position: static;
-    margin-right: 20px; 
-}
-
-.navbar .btn-1:hover {
-    background-color: #f0f0f0;
-}
-
-.navbar .btn-1::after {
-    content: '⌵';
-    font-size: 0.75em; 
-    margin-left: 5px;
-    transform: translateY(1px);
-    position: static;
-}
-
-.navbar .btn-2 {
-    background-color: #ff0000;
-    color: #ffffff;
-    border: none;
-    border-radius: 50px;
-    padding: 8px 20px; 
-    font-size: large;
-    font-weight: 600;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    white-space: nowrap;
-    margin-left: auto; 
-}
-
-.navbar .btn-2:hover {
-    background-color: #ff3333;
-    box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); 
-    transform: scale(1.03);
-}
-
-/* Footer Css  */
-.masai-footer {
-    background-color: #000;
-    width: 100%;
-    color: #fff;
-    padding: 50px 0 20px 0;
-}
-
-.footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/*
- * Social Media Section (Left Column)
- */
-.footer-social {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin-bottom: 40px;
-}
-
-.footer-logo {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.logo-text {
-    font-size: 24px;
-    font-weight: 700;
-    color: #fff;
-}
-
-.follow-us {
-    font-size: 14px;
-    color: #fff;
-    margin-bottom: 15px;
-}
-
-.social-icons {
-    display: flex;
-    gap: 15px;
-}
-
-.social-icons a {
-    color: #a0a0a0;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-.social-icons a:hover {
-    color: #fff;
-}
-
-/*
- * Main Content: Link Columns and CTA Button (Flex layout)
- */
-.footer-main-content {
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-/*
- * Navigation Columns (Grid layout for responsive columns)
- */
-.footer-nav-columns {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 40px;
-}
-
-.nav-heading {
-    color: #fff;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 0.5px;
-}
-
-.nav-list {
-    list-style: none;
-    padding: 0;
-}
-
-.nav-list li {
-    margin-bottom: 15px;
-}
-
-.nav-list a {
-    text-decoration: none;
-    color: #a0a0a0;
-    font-size: 14px;
-    transition: color 0.3s;
-}
-
-.nav-list a:hover {
-    color: #fff;
-}
-
-/*
- * CTA Section (Right Column)
- */
-.footer-cta {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding-left: 40px;
-}
-
-.cta-text {
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
+    font-size: 1.8rem;
+    text-align: center;
     line-height: 1.4;
-    max-width: 250px;
-    margin-bottom: 25px;
+    color: #ed0331;
+    margin: 0;
 }
 
-.telegram-button {
-    display: inline-flex;
-    align-items: center;
-    padding: 12px 25px;
-    background-color: #ea2945;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 50px;
-    font-size: 14px;
-    font-weight: 600;
-    transition: background-color 0.3s;
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
-.telegram-button i {
-    margin-left: 10px;
-    font-size: 14px;
+.stat-box {
+  background: #fff;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+  border-radius: 10px;
+  text-align: center;
+  width: 180px;
+  padding: 25px 0;
 }
 
-/* Button Hover Effect */
-.telegram-button:hover {
-    background-color: #c71e35;
+.stat-box h2 {
+  color: #ed0331;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-/*
- * Copyright Section (Bottom Row)
- */
-.footer-copyright {
-    padding-top: 20px;
-    text-align: left;
+.stat-box p {
+  color: #333;
+  font-size: 0.9rem;
 }
 
-.footer-copyright p {
-    font-size: 12px;
-    color: #a0a0a0;
+/* Ratings Section */
+.ratings {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 30px;
+}
+
+.rating {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+  text-align: center;
+  padding: 20px 30px;
+}
+
+.rating h4 {
+  color: #ed0331;
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+}
+
+.rating img {
+  height: 25px;
+}
+
+.rating p {
+  font-size: 1rem;
+  color: #000;
 }
