@@ -1,10 +1,13 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+/* Reset + Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
 }
 
+
+/* Headings */
 .H1-1 {
   font-family: "Poppins", sans-serif;
   font-weight: 800;
@@ -12,76 +15,175 @@
   text-align: center;
   line-height: 1.2;
   color: #000;
-  margin: 0 0 20px;
+  margin: 0 0 10px;
   letter-spacing: -1px;
 }
 
 h3 {
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 1.8rem;
-    text-align: center;
-    line-height: 1.4;
-    color: #ed0331;
-    margin: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.4;
+  color: #ed0331;
+  margin-top: 5px;
+  margin-bottom: 40px;
 }
 
+/* Stats Section */
 .stats {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 50px;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 60px;
   flex-wrap: wrap;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .stat-box {
   background: #fff;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
-  border-radius: 10px;
+  border: 1.5px solid #f3e8e8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
   text-align: center;
-  width: 180px;
-  padding: 25px 0;
+  width: 210px;
+  padding: 30px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
 .stat-box h2 {
   color: #ed0331;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  margin-bottom: 5px;
+  margin-bottom: 6px;
+  letter-spacing: 0.3px;
 }
 
 .stat-box p {
-  color: #333;
-  font-size: 0.9rem;
+  color: #4a4a4a;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 /* Ratings Section */
 .ratings {
   display: flex;
   justify-content: center;
-  gap: 2rem;
-  margin-top: 30px;
+  align-items: center;
+  gap: 2.5rem;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rating {
   background: #fff;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0,0,0,0.05);
+  border: 1.5px solid #f3e8e8;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.03);
+  border-radius: 16px;
   text-align: center;
-  padding: 20px 30px;
+  padding: 28px 36px;
+  width: 190px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rating:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
 }
 
 .rating h4 {
   color: #ed0331;
-  font-size: 1.5rem;
-  margin: 0 0 10px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin: 0 0 8px;
 }
 
 .rating img {
   height: 25px;
+  margin-top: 4px;
 }
 
 .rating p {
   font-size: 1rem;
-  color: #000;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin-top: 4px;
+}
+
+
+
+/* AICET Section */
+.entrance-section {
+  background-color: #ed0331;
+  background-image: url('wave-pattern.png'); /* optional background pattern */
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0 40px;
+  position: relative;
+}
+
+.entrance-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.entrance-content h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.entrance-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.entrance-content .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 25px 0;
+}
+
+.entrance-content .logos img {
+  height: 40px;
+  object-fit: contain;
+}
+
+.register-btn {
+  background-color: #fff;
+  color: #ed0331;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  border-radius: 999px;
+  padding: 12px 40px;
+  cursor: pointer;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  position: relative;
+  left: 5%;
+}
+
+.register-btn:hover {
+  transform: translateY(-2px);
 }
