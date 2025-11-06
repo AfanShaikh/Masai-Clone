@@ -22,10 +22,10 @@ export const Nav = () => {
 
             <h1>Hire From US</h1>
 
-            <h1>Success</h1>
+            <h1>Success Stories</h1>
 
-            <button class="btn-2">
-
+            <button class="btn-2" >
+        
                 Login/Sign up
 
             </button>
@@ -51,7 +51,7 @@ export const NavStyle = () => {
         border-radius: 50px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
         margin: 20px auto;
-        max-width: 1050px; 
+        max-width: 1150px; 
         height: 70px; 
         padding: 0 30px; 
         display: flex;
