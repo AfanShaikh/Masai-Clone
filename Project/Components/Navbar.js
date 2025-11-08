@@ -24,7 +24,7 @@ export const Nav = () => {
 
             <h1>Success Stories</h1>
 
-            <button class="btn-2" >
+            <button onclick="SignInPage()" class="btn-2">
         
                 Login/Sign up
 
